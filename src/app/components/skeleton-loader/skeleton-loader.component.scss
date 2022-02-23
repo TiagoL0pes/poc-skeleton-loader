@@ -1,0 +1,44 @@
+.container {
+  &__card {
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+    &-content,
+    &-footer {
+      margin-top: 1rem;
+    }
+
+    &-footer {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      &-items {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  &__profile-lines {
+    display: flex;
+    flex-direction: column;
+
+    :first-child {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    &__card {
+      width: 100%;
+    }
+  }
+}
